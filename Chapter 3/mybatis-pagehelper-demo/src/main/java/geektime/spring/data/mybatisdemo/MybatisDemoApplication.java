@@ -44,6 +44,7 @@ public class MybatisDemoApplication implements ApplicationRunner {
 		List<Coffee> list = coffeeMapper.findAllWithParam(2, 3);
 		PageInfo page = new PageInfo(list);
 		log.info("PageInfo: {}", page);
+		log.info("show me sth");
 	}
 }
 

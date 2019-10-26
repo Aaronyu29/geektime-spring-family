@@ -80,7 +80,7 @@ public class JpaDemoApplication implements ApplicationRunner {
 				.forEach(c -> log.info("Loading {}", c));
 
 		List<CoffeeOrder> list = orderRepository.findTop3ByOrderByUpdateTimeDescIdAsc();
-		log.info("findTop3ByOrderByUpdateTimeDescIdAsc: {}", getJoinedOrderId(list));
+		log.info("findTop3ByOrderByUpdateTimeDescIdAsc: {}", getJoinedOrderId(list)); 
 
 		list = orderRepository.findByCustomerOrderById("Li Lei");
 		log.info("findByCustomerOrderById: {}", getJoinedOrderId(list));
